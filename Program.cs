@@ -24,7 +24,7 @@ internal class Program
         DiceRoll dr = new DiceRoll();
 
         // Perform dice simulation and get results
-        int[] results = dr.DiceSim(dicerolled);
+        int[]results = dr.DiceSim(dicerolled);
 
         // Display simulation results header
         System.Console.WriteLine("\nDICE ROLLING SIMULATION RESULTS");
@@ -39,15 +39,15 @@ internal class Program
             int percentage = (int)((double)results[i] / dicerolled * 100);
             
             // Display the current dice roll value along with its percentage
-            Console.Write(i+ 2 + ": ");
+            System.Console.Write(i+ 2 + ": ");
 
             // Display '*' for each percentage point, representing the distribution
             for (int j = 0; j < percentage; j++)
             {
-                Console.Write("*");
+                System.Console.Write("*");
             }
             // Move to the next line for the next dice roll outcome
-            Console.WriteLine();
+            System.Console.WriteLine();
 
         }
 
